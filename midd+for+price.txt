@@ -1,0 +1,6 @@
+if($request->url('products/checkout') OR $request->url('products/pay')
+         OR $request->url('products/success')) {
+            if(Session::get('price') == 0) {
+                return abort('403');
+            } 
+        }

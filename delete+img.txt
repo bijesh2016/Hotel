@@ -1,0 +1,5 @@
+ if(File::exists(public_path('assets/images/' . $deleteJob->image))){
+            File::delete(public_path('assets/images/' . $deleteJob->image));
+        }else{
+            //dd('File does not exists.');
+        }
