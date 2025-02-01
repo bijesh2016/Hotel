@@ -1,0 +1,5 @@
+ if($request->url('admin/login') ) {
+            if(isset(Auth::guard('admin')->user()->name)) {
+                return redirect()->route('admins.dashboard');
+            } 
+        }
